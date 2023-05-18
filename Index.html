@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Clone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Responsive.css">
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav>
+        <ul>
+            <li class="logo"><img src="img/logo.png" alt="Spotify"><span>Spotify</span></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">More Projects</a></li>
+        </ul>
+    </nav>
+    <!--Box of Player-->
+    <div id="box-container">
+        <section id="UpperOne">
+            <div id="bottomPlayer">
+                <div id="playerSong">
+                    <div id="playedSongTopHeading">
+                        <div id="playedSongImage"><img src="img/covers/1.jpg" alt="" width="50%" height="350vh"></div>
+                        <div id="playedSongLyrics">Lyrics will be added soon
+                            <hr>
+                        </div>
+                    </div>
+                    <div id="playedSongHeading">
+                        <div id="playedSongName">Musafir</div>
+                        <div id="heartIcon"><div id="Heart">&#10084;</div></div>
+                    </div>
+                    <div id="playedSongSinger">Song ○ Arijit Singh</div>
+                    <div id="range"><input type="range" name="musicplay" id="musicTimer" min="0" value="0" max="100"></div>
+                    <div id="songTime">
+                        <div id="playedSongTimeStart">0:00</div>
+                        <div id="playedSongTimeRemaining">2:59</div>
+                    </div>
+                    <div id="plaPause">
+                        <i class="fa fa-backward-step" id="nextSong"></i>
+                        <i class="fa fa-play-circle" id="playPause" ></i>
+                        <i class="fa fa-forward-step" id="previousSong"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Side Panel of music list-->
+        <section id="UpperTwo">
+            <div id="music-container">
+                <div id="playlistHeading"></div>
+                <h1 id="headingPlaylist">Playlist</h1>
+                <hr>
+                <div id="songList">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">Musafir</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio"  src="songs/01.mp3"></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ Arijit Singh</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="difference">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">I m an Albatraoz</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio" src="songs/02.mp3"></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ AronChupa</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="difference">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">Aye Mere Pyare Watan</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio" src="songs/03.mp3" ></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ Balraj S</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="difference">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">Badnam</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio" src="songs/04.mp3" ></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ Mankirt Aulakh</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="difference">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">Bam Bam bholey</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio" src="songs/05.mp3" ></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ Dope Boy Leo</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="difference">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">Mockingbird</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio" src="songs/06.mp3" ></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ Eminem</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="difference">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">Hai Rama</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio" src="songs/07.mp3"></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ Hai Rama</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="difference">
+                    <div id="song">
+                        <img src="img/covers/1.jpg" alt="pic" id="imgSong" width="100px" height="130px">
+                        <div id="songTitle">
+                            <div id="songName">Until I Found You</div>
+                            <div id="songLyrics">
+                                <h6 id="Lyrics">
+                                    We'll never get free Lamb to the slaughter What you gon' do when there's blood in
+                                    water
+                                </h6>
+                                <audio id="my-audio" src="songs/08.mp3"></audio>
+                            </div>
+                            <br>
+                            <div id="songBottom">
+                                <div id="songSinger">Song ○ Stephen Sanchez</div>
+                                <div><i class="fa fa-play-circle" id="playIcon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="likedMessage">Added to Liked Song</div>
+
+    <script src="JS/app.js"></script>
+    <script src="https://kit.fontawesome.com/7475490873.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
