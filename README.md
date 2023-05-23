@@ -1,2 +1,2 @@
 # Music-player
-Played part is under contruction
+Played song part is under contruction
