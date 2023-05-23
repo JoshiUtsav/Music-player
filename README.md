@@ -1,2 +1,2 @@
 # Music-player
-Updated Soon
+Played part is under contruction
