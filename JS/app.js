@@ -1,12 +1,12 @@
 const songs = [
-    { songName: "Musafir", coverPath: "../img/covers/1.jpg", filePath: "../songs/1.mp3" },
-    { songName: "I m an Albatraoz", coverPath: "../img/covers/2.jpg", filePath: "../songs/2.mp3" },
-    { songName: "Aye Mere Pyare Watan", coverPath: "../img/covers/3.jpg", filePath: "../songs/3.mp3" },
-    { songName: "Badnam", coverPath: "../img/covers/4.jpg", filePath: "../songs/4.mp3" },
-    { songName: "Bam Bam bholey", coverPath: "../img/covers/5.jpg", filePath: "../songs/5.mp3" },
-    { songName: "Mockingbird", coverPath: "../img/covers/6.jpg", filePath: "../songs/6.mp3" },
-    { songName: "Hai Rama", coverPath: "../img/covers/7.jpg", filePath: "../songs/7.mp3" },
-    { songName: "Until I Found You", coverPath: "../img/covers/8.jpg", filePath: "../songs/8.mp3" }
+    { songName: "Musafir", coverPath: "../img/covers/1.jpg", filePath: "../songs/1.mp3", singer: "Arijit Singh" },
+    { songName: "I m an Albatraoz", coverPath: "../img/covers/2.jpg", filePath: "../songs/2.mp3", singer: "AronChupa" },
+    { songName: "Aye Mere Pyare Watan", coverPath: "../img/covers/3.jpg", filePath: "../songs/3.mp3", singer: "Balraj S" },
+    { songName: "Badnam", coverPath: "../img/covers/4.jpg", filePath: "../songs/4.mp3", singer: "Mankirt Aulakh" },
+    { songName: "Bam Bam bholey", coverPath: "../img/covers/5.jpg", filePath: "../songs/5.mp3", singer: "Dope Boy Leo" },
+    { songName: "Mockingbird", coverPath: "../img/covers/6.jpg", filePath: "../songs/6.mp3", singer: "Eminem" },
+    { songName: "Hai Rama", coverPath: "../img/covers/7.jpg", filePath: "../songs/7.mp3", singer: "Swarnalatha" },
+    { songName: "Until I Found You", coverPath: "../img/covers/8.jpg", filePath: "../songs/8.mp3", singer: "Stephen Sanchez" }
 ];
 
 // PlayPause
@@ -19,12 +19,12 @@ let playedSongName = document.getElementById('playedSongName');
 let songSinger = document.getElementById('songSinger');
 let song = Array.from(document.getElementsByClassName('song'));
 let songPlayed = document.getElementById('song');
+let image =  document.querySelector('#playedSongImage');
 
 song.forEach((e, i) => {
     // console.log(e,i);
     e.getElementsByTagName('img')[0].src = songs[i].coverPath;
     e.getElementsByClassName('songName')[0].innerText = songs[i].songName;
-
 })
 
 // Play Song
@@ -83,5 +83,8 @@ Array.from(document.getElementsByClassName('playSongIcon')).forEach((element) =>
         audio.play();
         playButton.classList.remove('fa-play-circle');
         playButton.classList.add('fa-pause-circle');
+        playedSongName.innerText = songs[index -1].songName;
+        playedSongSinger.innerText =`Song ○  ${ songs[index -1].singer}`;
+        document.querySelector('.image').src = songs[index-1].coverPath;
     })
 })
