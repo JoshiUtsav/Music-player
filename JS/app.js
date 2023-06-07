@@ -79,6 +79,7 @@ Array.from(document.getElementsByClassName('playSongIcon')).forEach((element) =>
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
         audio.src = `../songs/${index}.mp3`;
+        console.log(audio.src);
         audio.currentTime = 0;
         audio.play();
         playButton.classList.remove('fa-play-circle');
